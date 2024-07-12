@@ -100,7 +100,7 @@ catch (Exception $e) {
 /* سایت دوم */
 try {
     $namSite = "mehrnews.ir";
-    $mohtavayeSite = getPage("https://www.mehrnews.com/search?q=$ebaratJostojoo");
+    $mohtavayeSite = getPage("http://www.mehrnews.com/search?q=$ebaratJostojoo");
     if ($mohtavayeSite == "") throw new Exception("er:page ($namSite)");
 
     $dom = new DOMDocument();
