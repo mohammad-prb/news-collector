@@ -1,0 +1,175 @@
+﻿@font-face {
+    font-family: "myFont";
+    src: url("fonts/vazir-medium-fd.woff");
+}
+@font-face {
+    font-family: "myIcon";
+    src: url("fonts/bootstrap-icons.woff");
+}
+html {
+    height: 100%;
+    color: hsl(0, 0%, 0%);
+}
+body {
+    position: relative;
+    float: right;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    min-width: 320px;
+    font-family: myFont;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+a, a:link, a:visited {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+}
+a:focus {
+    outline-offset: -1px;
+}
+input {
+    padding: 15px 30px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 28px;
+    font-family: myFont;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: background-color 0.2s, color 0.2s;
+}
+input:focus {
+    outline: 0;
+}
+/* کادر مدیریت */
+.kadrModiriat {
+    float: left;
+    width: calc(50% - 100px);
+    padding: 100px 25% 80px;
+    margin: 0 50px;
+}
+.kadrInput {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+input.search {
+    width: calc(100% - 60px);
+}
+input.submit {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 65px;
+    height: 56px;
+    padding: 0;
+    border-radius: 28px 0 0 28px;
+    text-align: center;
+    font-family: myIcon;
+    font-size: 1.5rem;
+    background-color: hsl(232, 100%, 70%);
+    color: white;
+    cursor: pointer;
+}
+input.submit:hover {
+    background-color: hsl(232, 100%, 60%);
+}
+input.delete {
+    float: left;
+    padding: 8px 20px;
+    border: 0;
+    font-size: 0.75rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 50%);
+}
+input.delete:hover {
+    color: hsl(0, 100%, 50%);
+}
+/* کادر اخبار */
+.kadrAkhbar {
+    float: right;
+    width: calc(100% - 100px);
+    margin: 0 50px 50px;
+}
+.kadrItemAkhbar {
+    float: right;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.itemKhabar {
+    width: calc(20% - 42px);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 18px;
+    border: 1px solid hsl(0, 0%, 80%);
+}
+.linkAks {
+    float: right;
+    width: 100%;
+}
+img.aksKhabar {
+    float: right;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.kadrMatnKhabar {
+    float: right;
+    width: 100%;
+    margin-top: 10px;
+}
+a.linkTitr, a.linkTitr:link, a.linkTitr:visited {
+    float: right;
+    width: 100%;
+    height: 42px;
+    overflow: hidden;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+}
+a.linkTitr:hover {
+    color: hsl(232, 100%, 70%);
+}
+a.linkTitr:active {
+    color: hsl(232, 100%, 80%);
+}
+p.description {
+    float: right;
+    width: 100%;
+    height: 42px;
+    overflow: hidden;
+    font-size: 0.875rem;
+    color: hsl(0, 0%, 50%);
+}
+a.etelaatKhabar, a.etelaatKhabar:link, a.etelaatKhabar:visited {
+    float: right;
+    width: 100%;
+    font-size: 0.875rem;
+    color: hsl(232, 100%, 70%);
+    text-align: left;
+}
+a.etelaatKhabar:hover {
+    color: hsl(232, 100%, 80%);
+}
+a.etelaatKhabar:active {
+    color: hsl(232, 100%, 60%);
+}
+@media only screen and (min-width: 767px) {
+    *::-webkit-scrollbar {
+        width: 10px;
+        height: 100%;
+    }
+    *::-webkit-scrollbar-track {
+        background: hsl(0, 0%, 87%);
+    }
+    *::-webkit-scrollbar-thumb {
+        background: hsl(0, 0%, 60%);
+    }
+    *::-webkit-scrollbar-thumb:hover {
+        background: hsl(0, 0%, 50%);
+    }
+    *::-webkit-scrollbar-thumb:active {
+        background: hsl(0, 0%, 40%);
+    }
+}
